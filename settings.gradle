@@ -7,4 +7,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "AndroidColorWheel"
-include ':app'
+include ':app', ':colorwheel'
