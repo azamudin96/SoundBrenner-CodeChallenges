@@ -32,7 +32,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cardTeal"
+                android:id="@+id/card1"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:checkable="true"
@@ -40,11 +40,12 @@
                 android:focusable="true"
                 app:cardBackgroundColor="@color/selector_bg_color"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/cardGreen"
+                app:layout_constraintEnd_toStartOf="@id/card2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <View
+                    android:id="@+id/view1"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:layout_gravity="center"
@@ -54,7 +55,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cardGreen"
+                android:id="@+id/card2"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:checkable="true"
@@ -62,11 +63,12 @@
                 android:focusable="true"
                 app:cardBackgroundColor="@color/selector_bg_color"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/cardOrange"
-                app:layout_constraintStart_toEndOf="@id/cardTeal"
+                app:layout_constraintEnd_toStartOf="@id/card3"
+                app:layout_constraintStart_toEndOf="@id/card1"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <View
+                    android:id="@+id/view2"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:layout_gravity="center"
@@ -76,7 +78,7 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/cardOrange"
+                android:id="@+id/card3"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:checkable="true"
@@ -85,11 +87,11 @@
                 app:cardBackgroundColor="@color/selector_bg_color"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/cardGreen"
+                app:layout_constraintStart_toEndOf="@id/card2"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <View
-                    android:id="@+id/orange"
+                    android:id="@+id/view3"
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:layout_gravity="center"
